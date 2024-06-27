@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="src/scripts.js"></script>
+</head>
+    <body>
+        <video autoplay muted loop id="mp4Video">
+            <source src="C:\Users\renan\OneDrive\Área de Trabalho\Pra ela\videos\cirilos.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        
+        <div class="option">
+            
+            <h1>Treino sabado?</h1>
+            <button class="btn-sim" onclick="trocarTela()">Sim</button>
+            <button class="btn-nao" onmouseover="moveButtonRandomly()">Não</button>
+            <div class="popup">
+                <span class="popuptext" id="myPopup">O Guri: Para de tentar clicar no nao o K******</span>
+            </div>
+        </div>
+
+        <div class="container2" id="container2" style="display: none;">
+            <h1>Treino marcado</h1>
+            
+            <p>Organizar refeição pós treino com o responsavel:</p>
+            
+            <a class="zap" href="https://wa.me/5541999088675?text=oi%20te%20amo%20%3C3%20">
+                <img src="img\CAPA-CHAMA-ZAP.jpg"  width="100" height="132">
+            </a>
+              
+        </div>
+
+        <script>
+            const vid = document.getElementById('mp4Video');
+            vid.volume = 0.2;
+            setTimeout(
+                function () {
+                    vid.muted = false;
+                }
+            , 2000);
+        </script>
+
+    </body>
+</html>

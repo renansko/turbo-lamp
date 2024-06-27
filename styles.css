@@ -1,0 +1,172 @@
+body {
+    background-color: #e6e6fa; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#mp4Video {
+    position: fixed; /* Vídeo como plano de fundo fixo */
+    align-items: center;
+    min-width: 80%;
+    min-height: 80%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Coloca o vídeo atrás de todos os outros elementos */
+}
+
+.option {
+    max-width: 500px;
+    padding: 220px;
+    text-align: center;
+    background-color: #ffffffc2; /* fundo branco para o conteúdo */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+}
+
+
+
+
+.option h1 {
+    color: #333; /* cor do título */
+}
+
+.option p {
+    color: #666; /* cor do texto */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-sim {
+    background-color: #5cb85c; /* verde */
+    color: #fff; /* texto branco */
+}
+
+.btn-nao {
+    background-color: #ff2c2c;
+    color: #fff; /* texto branco */
+}
+
+.option {
+    position: relative; /* Necessário para posicionamento absoluto dos botões */
+}
+
+button {
+    position: relative; /* Padrão relativo para todos os botões */
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 176px; /* 160px + 10% */
+    height: auto; /* Adjust as needed if there's a set height */
+    padding: 8px 0;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: fixed; /* Change to fixed to position relative to the viewport */
+    z-index: 1;
+    top: 10%; /* Adjust to set distance from the top of the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position arrow at the bottom of the popup */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+  /* Toggle this class when clicking on the popup option (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  .container2 {
+    display: none; /* Inicia oculto */
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffffc5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container2 h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.container2 p {
+    color: #000000;
+    font-size: 16px;
+}
+
+.container2 .zap {
+    display: grid; 
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.container2 .zap img {
+    width: 100px;
+    height: 132px;
+    border-radius: 10px;
+}
+
+.container2 .voltar {
+    display: block; /* Alterado para display block */
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff2c2c;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container2 .voltar:hover {
+    background-color: #e60000;
+}
